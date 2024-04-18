@@ -1,0 +1,35 @@
+[package]
+name = "namada_tx_prelude"
+description = "Namada transaction WASM prelude"
+resolver = "2"
+authors.workspace = true
+edition.workspace = true
+documentation.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+version.workspace = true
+
+[features]
+default = []
+
+[dependencies]
+namada_account = { path = "../account" }
+namada_core = { path = "../core" }
+namada_governance = { path = "../governance" }
+namada_ibc = { path = "../ibc" }
+namada_macros = { path = "../macros" }
+namada_parameters = { path = "../parameters" }
+namada_proof_of_stake = { path = "../proof_of_stake" }
+namada_storage = { path = "../storage" }
+namada_token = { path = "../token" }
+namada_tx = { path = "../tx" }
+namada_tx_env = { path = "../tx_env" }
+namada_vm_env = { path = "../vm_env" }
+
+borsh.workspace = true
+masp_primitives.workspace = true
+sha2.workspace = true
+thiserror.workspace = true

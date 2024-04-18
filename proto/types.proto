@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package types;
+
+message Tx {
+  bytes data = 1;
+}
